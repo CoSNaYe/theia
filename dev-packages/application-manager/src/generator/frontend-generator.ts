@@ -113,7 +113,7 @@ const { isMaster } = require('cluster');
 const { fork } = require('child_process');
 const { app, shell, BrowserWindow, ipcMain, Menu } = electron;
 
-const applicationName = \`${this.pck.props.frontend.config.applicationName}\`;
+const applicationName = '${this.pck.props.frontend.config.applicationName}';
 
 if (isMaster) {
     app.on('ready', () => {
@@ -157,6 +157,9 @@ if (isMaster) {
         });
         ipcMain.on('create-new-window', (event, url) => {
             createNewWindow(url);
+        });
+        ipcMain.on('open-external', (event, url) => {
+            shell.openExternal(url);
         });
 
         // Check whether we are in bundled application or development mode.
