@@ -69,7 +69,6 @@ export namespace VSCodeDebuggerContribution {
     }
 }
 
-// TODO move to @theia/debug
 @injectable()
 export abstract class AbstractVSCodeDebugAdapterContribution implements DebugAdapterContribution {
 
@@ -91,9 +90,11 @@ export abstract class AbstractVSCodeDebugAdapterContribution implements DebugAda
 
         const nlsPath = path.join(this.extensionPath, 'package.nls.json');
         if (fs.existsSync(nlsPath)) {
-            const nlsMap = require(nlsPath);
+            const nlsMap: {
+                [key: string]: string
+            } = require(nlsPath);
             for (const key of Object.keys(nlsMap)) {
-                const value = nlsMap[key];
+                const value = nlsMap[key].replace(/\"/g, '\\"');
                 text = text.split('%' + key + '%').join(value);
             }
         }
