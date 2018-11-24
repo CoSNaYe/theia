@@ -1,15 +1,29 @@
-# Theia - Cloud & Desktop IDE
+<div style='text-align:center;padding-top:1em;;margin:0 auto;width:60%'>
+
+![Theia](/logo/eclipse-theia-logo.png)
+
+</div>
+
+<div style='text-align:center;'>
+
 [![Gitpod - Code Now](https://img.shields.io/badge/Gitpod-code%20now-blue.svg?longCache=true)](https://gitpod.io#https://github.com/theia-ide/theia)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/theia-ide/theia/labels/help%20wanted)
-[![Gitter](https://img.shields.io/badge/chat-on%20gitter-blue.svg)](https://gitter.im/theia-ide/theia)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-curved)](https://github.com/theia-ide/theia/labels/help%20wanted)
+[![Gitter](https://img.shields.io/badge/Chat-on%20gitter-blue.svg)](https://gitter.im/theia-ide/theia)
 [![Build Status](https://travis-ci.org/theia-ide/theia.svg?branch=master)](https://travis-ci.org/theia-ide/theia)
 [![Build status](https://ci.appveyor.com/api/projects/status/02s4d40orokl3njl/branch/master?svg=true)](https://ci.appveyor.com/project/kittaakos/theia/branch/master)
-[![Open questions](https://img.shields.io/badge/Open-questions-pink.svg?style=flat-square)](https://github.com/theia-ide/theia/labels/question)
-[![Open bugs](https://img.shields.io/badge/Open-bugs-red.svg?style=flat-square)](https://github.com/theia-ide/theia/labels/bug)
+[![Open questions](https://img.shields.io/badge/Open-questions-blue.svg?style=flat-curved)](https://github.com/theia-ide/theia/labels/question)
+[![Open bugs](https://img.shields.io/badge/Open-bugs-red.svg?style=flat-curved)](https://github.com/theia-ide/theia/labels/bug)
 
+### Cloud & Desktop IDE Platform
 Theia is an extensible platform to develop full-fledged multi-language Cloud & Desktop IDE-like products with state-of-the-art web technologies.
 
-![Theia](https://user-images.githubusercontent.com/372735/33182625-0f6575f0-d075-11e7-8ec7-53801e3892bd.jpg)
+</div>
+
+<div style='margin:0 auto;width:80%;'>
+
+![Theia](/doc/images/theia-screenshot.jpg)
+
+</div>
 
 - [**Website**](#website)
 - [**Scope**](#scope)
@@ -60,9 +74,9 @@ Read below how to engage with Theia community:
 
 ## Roadmap
 During the first half of 2018, the team is focusing on the following features:
- 
- - __Debugging__ 
-   
+
+ - __Debugging__
+
    A visual debugger leveraging the Debug Server Protocol defined by the VS Code team.
 
  - __Workbench Improvements__
@@ -72,16 +86,16 @@ During the first half of 2018, the team is focusing on the following features:
  - __Search__
 
    Theia already can search files by name (<kbd>CMD</kbd> + <kbd>P</kbd>). In early 2018 a full text search shall be developed and added.
- 
+
  - __More Git Support__
 
-   In addition to the already present commit staging view, the team will add a git history and git diff view to better visualize the different states of git repositories. 
+   In addition to the already present commit staging view, the team will add a git history and git diff view to better visualize the different states of git repositories.
 
  - __Navigator Improvements__
 
    The file navigator shall support decorations, which are to be used by the git and the problems view extensions. It will allow to signal on a file whether there are git changes resp. diagnostics.
 
- - __Better Markdown Support__ 
+ - __Better Markdown Support__
 
    The Markdown support shall be improved to allow better preview that syncs scrolling. Also rendering plug-ins based on `markdown-it` shall be supported and tools like linters and dead link checkers shall be integrated.
 
@@ -90,7 +104,7 @@ During the first half of 2018, the team is focusing on the following features:
 
  - __More__
 
-   Any contributors might want to work on additional things. At least this happened in 2017 and is likely to increase with a growing community. :) 
+   Any contributors might want to work on additional things. At least this happened in 2017 and is likely to increase with a growing community. :)
 
 ## License
 
